@@ -1,6 +1,7 @@
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import Warning from "./Warning";
 import "./styles.css";
 
 class App extends React.Component {
