@@ -10,6 +10,7 @@ class App extends React.Component {
   state = {
     count: 0
   }
+
   render() {
     const { count } = this.state
     return (
