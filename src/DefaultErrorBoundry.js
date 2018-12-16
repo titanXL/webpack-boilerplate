@@ -10,13 +10,13 @@ export default class DefaultErrorBoundry extends React.Component {
     return { isError: true }
   }
 
+  static propTypes = {
+    children: PropTypes.node
+  }
+
   render() {
     const { isError } = this.state
     const { children } = this.props
     return isError ? <div>Something went wrong</div> : children
   }
-}
-
-DefaultErrorBoundry.propTypes = {
-  children: PropTypes.element
 }
