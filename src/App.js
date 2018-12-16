@@ -6,6 +6,8 @@ import image from './image.jpg'
 
 const Warning = React.lazy(() => import('./Warning'))
 
+const a = 'a'
+
 class App extends React.Component {
   state = {
     count: 0
