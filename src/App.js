@@ -17,6 +17,7 @@ class App extends React.Component {
       <div>
         <img src={image} alt="logo" />
         <h1 className={count > 10 ? 'warning' : ''}>Hello World! {count}</h1>
+        <h2>TEST</h2>
         <button
           onClick={() => this.setState(state => ({ count: state.count + 1 }))}
         >
