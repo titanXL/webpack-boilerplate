@@ -2,10 +2,14 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+    vendor: ['react', 'react-dom']
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'app.bundle.js'
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].[chunkhash].bundle.js'
   },
   module: {
     rules: [
