@@ -20,3 +20,7 @@ Setup as a boilerplate for React projects, it includes libraries such as react-a
 ## Linters and formaters
 
 The project uses eslint for linting javascript errors and prettier for formatting standarts. Configurations can be found in .eslintrc.json and for the later .prettierrc
+
+### Optimizations
+
+The prodcution ready build, includes minified and optimized css (e.g. removed duplication etc.)
