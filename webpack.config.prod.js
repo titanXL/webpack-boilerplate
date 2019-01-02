@@ -2,10 +2,12 @@ const merge = require('webpack-merge')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const baseConfig = require('./webpack.config.base')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = merge(baseConfig, {
   mode: 'production',
   plugins: [
+    new OptimizeCssAssetsPlugin(),
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,
